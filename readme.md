@@ -17,7 +17,7 @@ This project demonstrates a hybrid Infrastructure as Code (IaC) approach where:
 ## 🗂️ Project Structure
 
 
-![Web1](screenshots/Screenshot 2025-11-27 014019.png)
+![Web1](screenshots/tree.png)
 
 
 ## 🚀 How It Works
@@ -58,10 +58,10 @@ Two public IPs showing different Nginx web pages.
 ## 📸 Screenshots
 
 ### Web Server 1
-![Web1](screenshots/Screenshot 2025-11-26 205814.png)
+![Web1](screenshots/ec2_1.png)
 
 ### Web Server 2
-![Web2](screenshots/Screenshot 2025-11-26 205831.png)
+![Web2](screenshots/ec2_2.png)
 
 Save it.
 
