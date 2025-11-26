@@ -56,19 +56,23 @@ terraform apply
 
 cd ../ansible
 ansible-playbook -i inventory.ini site.yml
+```
 
 ### ✅ Expected Output
 
 Two public IPs showing different Nginx web pages.
 
-📸 Screenshots
+## 📸 Screenshots
 
-(Add your screenshots in a folder named screenshots/)
+### Web Server 1
+![Web1](screenshots/Screenshot 2025-11-26 205814.png)
 
+### Web Server 2
+![Web2](screenshots/Screenshot 2025-11-26 205831.png)
 
 Save it.
 
----
+
 
 ## 3. Create `.gitignore` (very important)
 
@@ -76,14 +80,6 @@ To avoid leaking secrets and state files.
 
 ```bash
 nano .gitignore
+```
 
-
-
-## 📸 Screenshots
-
-### Web Server 1
-![Web1](screenshots/web1.png)
-
-### Web Server 2
-![Web2](screenshots/web2.png)
 
