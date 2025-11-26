@@ -17,22 +17,7 @@ This project demonstrates a hybrid Infrastructure as Code (IaC) approach where:
 ## 🗂️ Project Structure
 
 
-.
-├── ansible
-│   ├── site.yml
-│   └── templates
-│       └── index.html.j2
-├── readme.md
-├── screenshots
-│   ├── Screenshot 2025-11-26 205814.png
-│   └── Screenshot 2025-11-26 205831.png
-└── terraform
-    ├── inventory.tpl
-    ├── main.tf
-    ├── outputs.tf
-    └── variables.tf
-
-5 directories, 9 files
+![Web1](screenshots/Screenshot 2025-11-27 014019.png)
 
 
 ## 🚀 How It Works
