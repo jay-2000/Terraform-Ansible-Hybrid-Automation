@@ -76,3 +76,7 @@ nano .gitignore
 ```
 
 
+## Note:
+
+- In main.tf SSH should be restrict to your IP.(for Testing purpose ssh from anywhere is ok)
+
