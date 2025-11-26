@@ -1,0 +1,38 @@
+---
+- name: Configure Nginx web servers
+  hosts: web
+  become: yes
+  vars:
+    # Mapping for unique content per server
+    server_messages:
+      web1: "Hello from Web Server 1 - Deployed via Terraform + Ansible"
+      web2: "Hello from Web Server 2 - Deployed via Terraform + Ansible"
+
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+
+    - name: Ensure Nginx is running and enabled
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: Deploy custom index.html
+      template:
+        src: templates/index.html.j2
+        dest: /var/www/html/index.html
+        owner: www-data
+        group: www-data
+        mode: "0644"
+      vars:
+        server_name: "{{ inventory_hostname }}"
+        server_message: "{{ server_messages[inventory_hostname] | default('Hello from ' ~ inventory_hostname) }}"
+

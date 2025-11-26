@@ -1,0 +1,11 @@
+# Terraform
+.terraform/
+terraform.tfstate*
+*.pem
+
+# Ansible
+inventory.ini
+
+# OS junk
+.DS_Store
+
