@@ -15,16 +15,24 @@ This project demonstrates a hybrid Infrastructure as Code (IaC) approach where:
 - Nginx
 
 ## 🗂️ Project Structure
-hybrid-iac/
-├── terraform/
-│ ├── main.tf
-│ ├── variables.tf
-│ ├── outputs.tf
-│ └── inventory.tpl
-└── ansible/
-├── site.yml
-└── templates/
-└── index.html.j2
+
+
+.
+├── ansible
+│   ├── site.yml
+│   └── templates
+│       └── index.html.j2
+├── readme.md
+├── screenshots
+│   ├── Screenshot 2025-11-26 205814.png
+│   └── Screenshot 2025-11-26 205831.png
+└── terraform
+    ├── inventory.tpl
+    ├── main.tf
+    ├── outputs.tf
+    └── variables.tf
+
+5 directories, 9 files
 
 
 ## 🚀 How It Works
